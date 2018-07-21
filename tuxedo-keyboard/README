@@ -1,0 +1,15 @@
+This is the kernel module needed by tuxedo computer to enable keyboard
+backlight leds.
+
+To build the package for a kernel different from the running one, start the
+script setting the KERNEL variable as in
+   KERNEL=4.6.3 ./tuxedo-keyboard.SlackBuild
+
+The module goes in lib/modules/$KERNEL/extra/ directory.
+
+To have this module loaded on boot, load it in /etc/rc.d/rc.modules.local with
+    if [ -r /lib/modules/$(uname -r)/extra/tuxedo_keyboard.ko ]; then
+      if depmod -n | grep -q tuxedo_keyboard ; then
+        /sbin/modprobe tuxedo_keyboard
+      fi
+    fi

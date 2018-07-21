@@ -1,0 +1,7 @@
+PRGNAM="tuxedo-keyboard"
+VERSION="master"
+HOMEPAGE="https://github.com/tuxedocomputers/tuxedo-keyboard"
+DOWNLOAD="https://github.com/tuxedocomputers/tuxedo-keyboard/archive/master.zip"
+MD5SUM="d163f00d44260887a4ce9e3e24dc88d9"
+MAINTAINER="simotrone"
+EMAIL="simotrone@gmail.com"
