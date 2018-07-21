@@ -1,4 +1,4 @@
-if ! lsmod | grep tuxedo_keyboard ; then
+if ! lsmod | grep -q tuxedo_keyboard ; then
 	echo "ERROR: kernel module 'tuxedo_keyboard' not loaded. Can't run"
 	exit 1
 fi
